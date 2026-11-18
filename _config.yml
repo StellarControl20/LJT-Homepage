@@ -13,9 +13,8 @@ url                      : https://stellarcontrol20.github.io
 baseurl                  : "/LJT-Homepage"
 repository               : "StellarControl20/LJT-Homepage"
 
-# Site Author - The following control what appear as part of the author content on the side bar.
+# Site Author
 author:
-  # Biographic information
   avatar           : ""
   name             : "Junteng Liu"
   pronouns         :
@@ -25,7 +24,6 @@ author:
   uri              :
   email            : "jliugi@connect.ust.hk"
 
-  # Academic websites
   academia         :
   arxiv            :
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate"
@@ -39,7 +37,6 @@ author:
   scopus           :
   zotero           :
 
-  # Repositories and software development
   bitbucket        :
   codepen          :
   dribbble         :
@@ -47,7 +44,6 @@ author:
   kaggle           :
   stackoverflow    :
 
-  # Social media
   artstation       :
   bluesky          :
   facebook         :
@@ -74,7 +70,6 @@ author:
   youtube          :
   zhihu            :
 
-# Publication categories
 publication_category:
   preprints:
     title: 'Preprints (arXiv)'
@@ -118,7 +113,7 @@ atom_feed:
   hide                   : true
   path                   :
 
-# SEO Related
+# SEO
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
@@ -140,7 +135,6 @@ social:
     - "https://github.com/Vicent0205"
     - "https://x.com/junteng88716710"
 
-# Analytics
 analytics:
   provider               : false
   google:
@@ -159,23 +153,28 @@ exclude:
   - .github
   - .jekyll-assets-cache
   - .sass-cache
-  - assets/js/_main.js
-  - assets/js/plugins
-  - assets/js/vendor
+  - AGENTS.md
   - CHANGELOG
   - Capfile
   - config
   - Dockerfile
   - Gemfile
+  - Gemfile.lock
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
   - local
   - log
+  - markdown_generator
   - node_modules
   - package.json*
   - Rakefile
   - README
+  - scripts
+  - talkmap
+  - talkmap.ipynb
+  - talkmap.py
+  - talkmap_out.ipynb
   - tmp
   - vendor
 keep_files:
@@ -185,14 +184,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
 
-# Markdown Processing
 kramdown:
   input: GFM
   hard_wrap: false
@@ -203,13 +200,11 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Collections
 collections:
   publications:
     output: true
     permalink: /publication/:path/
 
-# Defaults
 defaults:
   - scope:
       path: ""
@@ -226,16 +221,13 @@ defaults:
       share: false
       comments: false
 
-# Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed
 
-# Outputting
 permalink: /:categories/:title/
 timezone: Etc/UTC
 
-# Plugins
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -252,7 +244,6 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
-# Archives
 category_archive:
   type: liquid
   path: /categories/
@@ -260,7 +251,6 @@ tag_archive:
   type: liquid
   path: /tags/
 
-# HTML Compression
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
