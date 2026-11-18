@@ -158,6 +158,7 @@ exclude:
   - Capfile
   - config
   - Dockerfile
+  - docker-compose.yaml
   - Gemfile
   - Gemfile.lock
   - Gruntfile.js
@@ -229,7 +230,6 @@ permalink: /:categories/:title/
 timezone: Etc/UTC
 
 plugins:
-  - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
@@ -237,7 +237,6 @@ plugins:
   - jemoji
 
 whitelist:
-  - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-sitemap
