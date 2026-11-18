@@ -7,6 +7,7 @@ pub_rank: 2
 pub_year: 2025
 venue: "arXiv, 2025"
 authors: "Junteng Liu, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He"
+excerpt: "arXiv, 2025"
 citation: "Junteng Liu, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He (2025). &quot;On the Perception Bottleneck of VLMs for Chart Understanding.&quot; <i>arXiv</i>."
 ---
 

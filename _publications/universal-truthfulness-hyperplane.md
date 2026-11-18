@@ -7,6 +7,7 @@ pub_rank: 3
 pub_year: 2024
 venue: "EMNLP 2024"
 authors: "Junteng Liu, Shiqi Chen, Yu Cheng, Junxian He"
+excerpt: "EMNLP 2024"
 citation: "Junteng Liu, Shiqi Chen, Yu Cheng, Junxian He (2024). &quot;On the Universal Truthfulness Hyperplane Inside LLMs.&quot; <i>EMNLP 2024</i>."
 ---
 
