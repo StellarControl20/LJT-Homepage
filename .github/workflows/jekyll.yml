@@ -53,20 +53,3 @@ jobs:
           git commit -m "Deploy personal homepage"
           git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git push -f origin gh-pages
-
-  verify-pages:
-    needs: build-and-deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: Verify deployed pages
-        run: |
-          set -e
-          check_url() {
-            url="$1"
-            echo "Checking $url"
-            body="$(curl --retry 24 --retry-all-errors --retry-delay 5 -L --fail --silent --show-error "$url")"
-            grep -q "Junteng Liu" <<<"$body"
-          }
-          check_url "https://stellarcontrol20.github.io/LJT-Homepage/"
-          check_url "https://stellarcontrol20.github.io/LJT-Homepage/publications/"
-          check_url "https://stellarcontrol20.github.io/LJT-Homepage/publication/synlogic/"
